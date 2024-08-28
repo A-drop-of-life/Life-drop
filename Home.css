@@ -1,0 +1,257 @@
+/* Reset margin and padding for all elements */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+
+/* Welcome Section Styling */
+#welcome {
+  background: #e0f7fa; /* Light cyan background */
+  padding: 50px 20px;
+  text-align: center;
+  margin-top: 80px;
+}
+
+#welcome h1 {
+  font-size: 2.5rem;
+  color: #8b0000; /* Teal color */
+  margin-bottom: 20px;
+}
+
+#welcome p {
+  font-size: 1.2rem;
+  color: #004d40; /* Darker teal color */
+  margin-bottom: 30px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#welcome button {
+  font-size: 1.1rem;
+  background-color: green; /* Teal color */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 15px 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#welcome button:hover {
+  background-color: #004d40; /* Darker teal color */
+}
+
+
+
+
+/* Card Styles */
+.card {
+  width: 100%;
+  height: 300px;
+  background: coral;
+  margin-top: 90px;
+  display: block;
+}
+
+.img {
+  width: 50%;
+  height: 100%;
+  float: right;
+  display: block;
+}
+
+.card .card-text {
+  width: 50%;
+  height: 100%;
+  float: right;
+}
+
+.card .card-text h2 {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.card .card-text ul {
+  list-style: none;
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+marquee{
+  margin-top: 20px;
+}
+
+/* Container for Cards */
+.container {
+  overflow-y: hidden;
+  display: flex;
+}
+
+#card1 {
+  display: flex;
+  border-radius: 10px;
+}
+
+#card3 {
+  position: relative;
+  width: 200px;
+  border: 2px solid black;
+  border-radius: 20px;
+  margin: 5px;
+  margin-top: 30px;
+}
+
+#card3 img {
+  width: 100%;
+  height: 50%;
+}
+
+#card3 center {
+  height: 50px;
+  background: bisque;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+#card3 p {
+  text-align: start;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 2px;
+  margin-right: 3px;
+}
+
+/* Main Section Styles */
+main {
+  width: 100%;
+  height: 20px;
+  background: darkgray;
+}
+
+#main1 {
+  width: 100%;
+  height: auto;
+  margin: 20px 0;
+}
+
+#main1 button {
+  width: 120px;
+  font-size: 22px;
+  font-weight: bold;
+  padding: 10px;
+  background: green;
+  border-radius: 10px;
+  border: none;
+  display: block;
+  margin-top: 30px;
+}
+
+#main1 h2 {
+  margin: 10px;
+}
+
+#main1 span {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+
+/* Footer Styles */
+.footer2 {
+  width: 100%;
+  height: 200px;
+  background: brown;
+  margin-top: 30px;
+  display: block;
+}
+
+.footer2 .footer-col {
+  margin-top: 13px;
+}
+
+.footer-col {
+  height: 100%;
+  margin: 0 20px 0 30px;
+  float: right;
+}
+
+.footer-col h2 {
+  color: darkorange;
+}
+
+.footer-col ul {
+  color: white;
+  font-weight: bold;
+  font-size: 17px;
+  list-style: none;
+}
+
+.footer-col ul li a{
+  list-style: none;
+  text-decoration: none;
+  color:  white;
+  font-weight: bold;
+  margin-right: 5px;
+}
+/* General styling for the topics section */
+#topics {
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+#topics h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.topic {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 15px;
+  overflow: hidden;
+}
+
+.topic h2 {
+  font-size: 1.5rem;
+  color: #333;
+  margin: 15px;
+}
+
+.topic img {
+  width: 100%;
+  height: auto;
+  border-bottom: 2px solid #ddd;
+}
+
+.topic p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #666;
+  margin: 15px;
+}
+
+/* Responsive grid layout for topics */
+@media (min-width: 768px) {
+  #topics {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  #topics {
+    display: block;
+  }
+}
+/* Responsive grid layout for topics */
+#topics {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}

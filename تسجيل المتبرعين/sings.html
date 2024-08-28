@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تسجيل المتبرعين بالدم</title>
+    <link rel="stylesheet" href="Sing.css">
+    <link rel="stylesheet" href="../styles/styles.css">
+    <script src="../Js/script.js" defer> </script>
+
+</head>
+<body>
+<header>
+        <nav id="nav">
+          <center> <pre>قطرةحياة</pre></center>    
+            <div id="d1" dir="rtl">
+                <button onclick="location.href='../index.html'">الرئيسية</button>
+                <button onclick="location.href='../اهمية التبرع/Importance.html'">أهمية التبرع بالدم</button>
+                <button onclick="location.href='../حول/about.html'">من نحن</button>
+                <button onclick="location.href='../تسجيل المتبرعين/sings.html'">التسجيل</button>
+            </div>
+            <img src="../images/logo/5.png" width="80" height="50" dir="ltr" id="logo">
+            <img src="../images/logo/7.png" id="icon">
+        </nav>
+        <center>
+            <div id="cont">
+                <img src="../images/logo/5.png" id="logo2">
+            </div>
+        </center>
+
+        <nav id="navbar">
+           
+            <ul>
+                <li><a href="../index.html">الرئيسية</a></li>
+                <li><a href="../اهمية التبرع/Importance.html">أهمية التبرع بالدم</a></li>
+                <li><a href="../حول/about.html">من نحن</a></li>
+                <li><a href="../تسجيل المتبرعين/sings.html">التسجيل والتطوع</a></li>
+            </ul>
+        </nav>
+       </header>
+
+<main>
+    <div class="container">
+        <form id="donorForm">
+            <fieldset>
+                <legend>المعلومات الشخصية</legend>
+                <label for="name">الاسم الكامل:</label>
+                <input type="text" id="name" name="name" required placeholder="أدخل اسمك الكامل">
+                
+                <label for="dob">تاريخ الميلاد:</label>
+                <input type="date" id="dob" name="dob" required>
+                
+                <label for="gender">الجنس:</label>
+                <select id="gender" name="gender" required>
+                    <option value="male">ذكر</option>
+                    <option value="female">أنثى</option>
+                </select>
+                
+                <label for="phone">رقم الهاتف:</label>
+                <input type="tel" id="phone" name="phone" required placeholder="أدخل رقم هاتفك">
+
+                <label for="email">البريد الإلكتروني:</label>
+                <input type="email" id="email" name="email" required placeholder="أدخل بريدك الإلكتروني">
+            </fieldset>
+
+            <fieldset>
+                <legend>المعلومات الطبية</legend>
+                <label for="blood-type">فصيلة الدم:</label>
+                <select id="blood-type" name="blood-type" required>
+                    <option value="A+">A+</option>
+                    <option value="A-">A-</option>
+                    <option value="B+">B+</option>
+                    <option value="B-">B-</option>
+                    <option value="AB+">AB+</option>
+                    <option value="AB-">AB-</option>
+                    <option value="O+">O+</option>
+                    <option value="O-">O-</option>
+                </select>
+
+                <label for="chronic-diseases">الأمراض المزمنة:</label>
+                <textarea id="chronic-diseases" name="chronic-diseases" placeholder="أدخل أي أمراض مزمنة تعاني منها"></textarea>
+
+                <label for="current-medications">الأدوية الحالية:</label>
+                <textarea id="current-medications" name="current-medications" placeholder="أدخل الأدوية التي تتناولها حالياً"></textarea>
+            </fieldset>
+
+            <fieldset>
+                <legend>عنوان السكن</legend>
+                <label for="city">المدينة:</label>
+                <input type="text" id="city" name="city" required placeholder="أدخل مدينتك">
+                
+                <label for="address">العنوان:</label>
+                <input type="text" id="address" name="address" required placeholder="أدخل عنوانك الكامل">
+            </fieldset>
+
+            <fieldset>
+                <label>
+                    <input type="checkbox" id="terms" name="terms" required>
+                    أوافق على شروط وأحكام التبرع بالدم
+                </label>
+            </fieldset>
+
+            <div class="buttons">
+                <button type="submit">تسجيل</button>
+                <button type="button" onclick="window.history.back()">إلغاء</button>
+            </div>
+        </form>
+    </div>
+</main>
+
+<script>
+document.querySelector('#donorForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // منع إرسال النموذج
+
+    var email = document.getElementById('email').value;
+    var phone = document.getElementById('phone').value;
+    var terms = document.getElementById('terms').checked;
+
+    if (!email.includes('@')) {
+        alert('يرجى إدخال بريد إلكتروني صالح.');
+        return; // توقف عن متابعة الكود إذا كان البريد الإلكتروني غير صحيح
+    }
+    
+    if (phone.length < 9) {
+        alert('رقم الهاتف غير صحيح.');
+        return; // توقف عن متابعة الكود إذا كان رقم الهاتف غير صحيح
+    }
+
+    if (!terms) {
+        alert('يجب قبول شروط وأحكام التبرع.');
+        return; // توقف عن متابعة الكود إذا لم يتم قبول الشروط
+    }
+
+    // الحصول على بيانات النموذج
+    var name = encodeURIComponent(document.getElementById('name').value);
+    var dob = encodeURIComponent(document.getElementById('dob').value);
+    var genderValue = document.getElementById('gender').value;
+    var phone = encodeURIComponent(document.getElementById('phone').value);
+    var email = encodeURIComponent(document.getElementById('email').value);
+    var bloodType = encodeURIComponent(document.getElementById('blood-type').value);
+    var chronicDiseases = encodeURIComponent(document.getElementById('chronic-diseases').value);
+    var currentMedications = encodeURIComponent(document.getElementById('current-medications').value);
+    var city = encodeURIComponent(document.getElementById('city').value);
+    var address = encodeURIComponent(document.getElementById('address').value);
+
+    // تحويل قيمة الجنس إلى النص العربي
+    var gender = (genderValue === 'male') ? 'ذكر' : 'أنثى';
+
+    // تكوين الرسالة
+    var message = `الإسم: ${name}%0Aتاريخ الميلاد: ${dob}%0Aالجنس: ${gender}%0Aرقم الهاتف: ${phone}%0Aالبريد الإلكتروني: ${email}%0Aنوع الدم: ${bloodType}%0Aالأمراض المزمنة: ${chronicDiseases}%0Aالأدوية الحالية: ${currentMedications}%0Aالمدينة: ${city}%0Aالعنوان: ${address}`;
+
+    // تكوين رابط WhatsApp مع رمز البلد
+    var whatsappUrl = `https://api.whatsapp.com/send?phone=967735525295&text=${message}`;
+
+    // فتح رابط WhatsApp
+    window.open(whatsappUrl, '_blank');
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,68 @@
+/* styles.css */
+
+/* أساسي */
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    direction: rtl; /* اتجاه النصوص من اليمين لليسار */
+    background-color: #f4f4f4; /* خلفية فاتحة لتحسين التباين */
+}
+
+/* رأس الصفحة */
+main {
+    margin-top: 70px; /* لتفادي التداخل مع الرأس الثابت */
+    padding: 40px 0;
+}
+
+.privacy-policy {
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+}
+
+.privacy-policy .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1, h2 {
+    color: #b71c1c; /* لون الدم */
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+h2 {
+    margin-top: 20px;
+    border-bottom: 2px solid #b71c1c; /* خط تحت العناوين */
+    padding-bottom: 5px;
+}
+
+ul {
+    list-style-type: disc;
+    margin: 10px 0;
+    padding: 0 20px;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+a {
+    color: #b71c1c; /* لون الدم */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* تذييل الصفحة */

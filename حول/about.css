@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    direction: rtl; /* اتجاه النصوص من اليمين لليسار */
+    background-color: #fff; /* خلفية بيضاء لتباين جيد */
+}
+
+
+main {
+    padding: 20px 0;
+  margin-top: 80px;
+}
+
+.about {
+    background: #f9f9f9;
+    padding: 20px 0;
+}
+
+.about .container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.about-content {
+    margin-bottom: 20px;
+}
+
+.about-content h2 {
+    color: #d32f2f; /* لون أحمر داكن */
+    border-bottom: 2px solid #b71c1c; /* لون أحمر أغمق لتفاصيل */
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.about-content p {
+    margin: 0;
+    font-size: 1em;
+    color: #333; /* لون نص داكن للقراءة */
+}
+
+.about-content ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.about-content ul li {
+    background: #f2f2f2; /* لون خلفية فاتح للعناصر */
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd; /* إطار رمادي خفيف */
+}

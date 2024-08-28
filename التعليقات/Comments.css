@@ -1,0 +1,131 @@
+/* أساسي */
+*{
+  margin: 0;
+  padding: 0;
+}
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    direction: rtl;
+    background-color: #f9f9f9;
+}
+
+/* رأس الصفحة */
+main {
+  margin-top: 80px;
+     /* لإتاحة مساحة لرأس الصفحة الثابت */
+}
+
+.comments-section {
+    padding: 50px 0;
+    background-color: #fff;
+}
+
+.comments-section .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.comments-section h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #c8102e; /* لون مميز يتناسب مع اللون الأساسي */
+}
+
+.comment-form {
+    margin-bottom: 40px;
+    background-color: #f1f1f1;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.comment-form h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #c8102e;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input, 
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #c8102e;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #a00;
+}
+
+/* عرض التعليقات */
+.comments-list {
+    padding: 20px 0;
+}
+
+.comments-list .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.comments-list h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #c8102e;
+}
+
+.comment {
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.comment-header {
+    font-size: 18px;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.comment-header strong {
+    color: #c8102e;
+}
+
+.comment p {
+    font-size: 16px;
+    color: #555;
+}
+
+/* تذييل الصفحة */

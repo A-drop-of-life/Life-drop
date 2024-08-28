@@ -1,0 +1,98 @@
+/* styles.css */
+*{
+  padding: 0;
+  margin: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    direction: rtl; /* اتجاه النصوص من اليمين لليسار */
+}
+
+
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.hero {
+    width: 100%;
+    height: auto;
+    display: block;
+  margin-top: 80px;
+}
+
+.benefits, .news {
+    padding: 40px 0;
+}
+
+.benefits {
+    background-color: #f2f2f2;
+}
+
+.benefits .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.benefits h2 {
+    color: #b71c1c; /* لون الدم */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.benefits ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.benefits ul li {
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.benefits ul li strong {
+    color: #b71c1c; /* لون الدم */
+}
+
+.news .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.news h2 {
+    color: #b71c1c; /* لون الدم */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.news article {
+    margin-bottom: 30px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.news img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.news h3 {
+    color: #b71c1c; /* لون الدم */
+    margin: 15px 20px;
+}
+
+.news p {
+    margin: 0 20px 20px;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
